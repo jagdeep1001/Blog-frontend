@@ -1,0 +1,33 @@
+<!--<div class="container d-flex" style="margin-top: 80px;">-->
+<!--<div class="card" style="width:700px; background: url('../../assets/book4.jpg');">-->
+<!--<div class="card-body op">-->
+<!--  <h4 class="card-title class2 "> Welcome to Creative Blogger</h4>-->
+<!--  <div style="border: 1px solid white"></div>-->
+
+
+<!--</div>-->
+
+<!--</div>-->
+<div class="container" style="margin-top: 40px; padding-left: 350px;" >
+  <div class="card" style="width:400px;">
+    <form >
+      <div style="position: absolute" class="class1 op">  LogIn to Enter the world of words !
+      </div>
+
+<img class="card-img-top" src="../../assets/book3.jpg">
+  <div class="card-body">
+    <div>
+  <span class="card-title" >Email: </span></div>
+
+        <input class= "form-control" type="email" placeholder="Enter Email address" [(ngModel)]="username" name="Username" required ><br>
+
+      <span class="card-title">Password:</span>
+      <input type="password" class="form-control" placeholder="Enter password" [(ngModel)]="password" name="Password" required><br>
+    <button class="btn btn-outline-info btn-block" (click)="checkLogin()">Log In</button>
+    <p style="margin-left:25px;margin-top:10px; ">Do not have an account? <a href="signin">Sign Up</a> with Us!</p>
+  </div>
+
+    </form>
+  </div>
+</div>
+

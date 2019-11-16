@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div class=" d-flex">
+<div style="width:80%" class="m-4">
+   <h4 class=" color1 font-weight-bolder font2" style="font-size: 50px;">{{blog.blog_name}}</h4>
+  <div style="border-top: 1px solid lightgray;width:200px;"></div>
+  <div class="text-muted mt-2" style="font-style: italic">{{blog.blog_content}}</div>
+  <div style="font-style: italic;">Content By: <span class="text-muted" style="font-style: italic;">{{blog.blog_author}}</span></div>
+</div>
+  <div style="background: whitesmoke ; width:20%;" class="m-4">
+<h5 class="font4  ml-2" style="font-size:40px;">Latest Posts</h5>
+    <div style="border-top: 1px solid lightgray; width:100px;" class="ml-3"></div>
+  </div>
+</div>
+<div  style="margin-left:400px;margin-right:400px; margin-top: 30px;">
+  <button class="btn btn-outline-info btn-block font2" style="font-size: 20px;" (click)="blogs()">All Blogs</button>
+</div>

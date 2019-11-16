@@ -1,0 +1,62 @@
+<!--<form>-->
+<!--  <input type="text" [(ngModel)]="blog.blog_name" placeholder="blog name" name="name">-->
+<!--  <input type="text" [(ngModel)]="blog.blog_desc" placeholder="blog desc" name="desc">-->
+<!--  <input type="text" [(ngModel)]="blog.blog_img" placeholder="blog img" name="img">-->
+<!--  <input type="text" [(ngModel)]="blog.blog_category" placeholder="blog category" name="cat">-->
+<!--  <input type="text" [(ngModel)]="blog.blog_author" placeholder="blog author" name="author">-->
+<!--<button (click)="createBlog()">Post</button>-->
+<!--</form>-->
+<app-navbar></app-navbar>
+<div style="background: url('../../assets/images.jpg'); height: 70px;" >
+  <p class="list1 pt-2" style="text-align: center;"> Create New Post</p>
+</div>
+<div class="container mt-4">
+
+<form  class="m-2 text-center" >
+
+  <div class="form-group">
+    <label class="color1 font1" style="font-size:30px;" >Blog Title:   </label>
+    <input class="form-control f1 " type="text" [(ngModel)]="blog.blog_name" placeholder="Enter Blog Title" name="name" required><br>
+  </div>
+  <div class="form-group">
+    <label class="color1 font1" style="font-size:30px;" >Brief Blog description:   </label>
+    <input class="form-control f1 " type="text" [(ngModel)]="blog.blog_desc" placeholder="Enter Brief description about the Blog" name="name" required><br>
+  </div>
+  <div class="form-group ">
+    <label for="desc" class="color1 font1" style="font-size:30px;" >Enter Blog Material:</label>
+<!--    <input class="form-control f1" type="textarea" [(ngModel)]="blog.blog_desc" placeholder="Enter Blog Description" id="desc" name="desc" required>-->
+   <textarea class="form-control f1" [(ngModel)]="blog.blog_content" placeholder="Enter Blog Content" id="desc" name="desc" rows="20" required>
+
+   </textarea><br>
+
+  </div>
+<!--  <label for="cat" class="color1 font1" style="font-size:30px;" >Category :</label>-->
+<!--  <select [(ngModel)]="blog.blog_category" class="form-control custom-select f1 " name="category" id="cat" required>-->
+<!--    <option selected >Inspiration</option>-->
+<!--    <option >Funny</option>-->
+<!--    <option >Technology</option>-->
+<!--    <option >Others</option>-->
+<!--  </select>-->
+<!--<br><br>-->
+  <div class="form-group">
+    <label class="color1 font1" style="font-size:30px;" >Enter Your Name :</label>
+    <input class="form-control f1 " type="text" [(ngModel)]="blog.blog_author" placeholder="Enter Author Name" name="a_name" required><br><br>
+
+  </div>
+  <div style="margin-left: 400px; margin-right: 400px;">
+  <button class="btn btn-outline-info btn-block mt-3" (click)="createBlog()">Post</button>
+  </div>
+</form>
+<!--  <form style="width: 50%" class="m-2 was-validated">-->
+<!--    <label for="cat">Category :</label>-->
+<!--    <select [(ngModel)]="blog.blog_category" class="form-control custom-select f1 " name="category" id="cat" required>-->
+<!--      <option selected >Inspiration</option>-->
+<!--      <option >Funny</option>-->
+<!--      <option >Technology</option>-->
+<!--      <option >Others</option>-->
+<!--    </select>-->
+<!--    <div class="valid-feedback">Valid.</div>-->
+<!--    <div class="invalid-feedback">Please fill out this field.</div>-->
+<!--  </form>-->
+
+</div>

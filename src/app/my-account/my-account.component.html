@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="container d-flex mt-4 align-items-center">
+<div class="card m-2" style="width: 400px;">
+  <div class="card-header font2 color1" style="font-size: 25px;"><b>My Profile</b></div>
+  <div class="card-body">
+<h3 class="font1 text-muted"><b>Name</b>: {{username}}</h3>
+    <hr class="text-muted" style="width:300px;">
+    <h3 class="font1 text-muted"><b>Email Address</b>: {{email}}</h3>
+    <hr class="text-muted" style="width:300px;">
+    <h3 class="font1 text-muted"><b>Gender</b>: {{gender}}</h3>
+    <hr class="text-muted" style="width:300px;">
+    <h3 class="font1 text-muted"><b>Contact Number</b>: {{mobile}}</h3>
+    <hr class="text-muted" style="width:300px;">
+  </div>
+</div>
+  <div class="card m-2" style="width: 800px;">
+    <div class="card-header font2 color1" style="font-size: 25px;"><b>Edit Profile</b></div>
+    <div class="card-body">
+      <form class="was-validated">
+        <h3 class="font1 " style="text-align: center;"><b>Edit Name:</b></h3>
+     <input class="form-control " type="text" placeholder="Enter Name" [(ngModel)]="user.username" name="name" >
+
+<hr class="mt-3">
+        <h3 class="font1 " style="text-align: center;"><b>Edit Email :</b></h3>
+        <input class="form-control " type="text" placeholder="Enter Email" [(ngModel)]="user.email" name="mail" >
+        <hr class="mt-3">
+        <h3 class="font1 " style="text-align: center;"><b>Edit Contact:</b></h3>
+        <input class="form-control " type="text" placeholder="Enter Contact" [(ngModel)]="user.mobile" name="mobile" >
+        <hr class="mt-3">
+        <h3 class="font1 " style="text-align: center;"><b>Edit Gender:</b></h3>
+        <select class="form-control" [(ngModel)]="user.gender" name="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+        </select>
+        <hr class="mt-3">
+        <button class="btn btn-block btn-outline-info" (click)="editUser()">Edit Details</button>
+      </form>
+    </div>
+  </div>
+</div>

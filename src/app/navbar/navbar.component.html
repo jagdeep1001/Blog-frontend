@@ -1,0 +1,36 @@
+
+<nav class="navbar navbar-expand-sm navbar-light " style="border-top:2px solid #97B162;height: 70px;">
+
+  <a class="navbar-brand mt-3" href="home">
+    <p class="color1 font2" >Creative Blogger </p>
+  </a>
+
+  <ul class="navbar-nav font2">
+    <li class="nav-item  color2">
+      <a class="nav-link" href="home">Home</a>
+    </li>
+    <li class="nav-item" *ngIf="! loginservice.isUserLoggedIn()">
+      <a class="nav-link color2" href="login">Login</a>
+    </li>
+    <li class= "nav-item" *ngIf="loginservice.isUserLoggedIn()">
+      <a class="nav-link color2 " href="#">Edit Profile</a>
+    </li>
+<li class= "nav-item" *ngIf="loginservice.isUserLoggedIn()">
+  <a class="nav-link color2 " href="logout" >Logout</a>
+</li>
+    <li class= "nav-item" *ngIf="loginservice.isUserLoggedIn()">
+      <a class="nav-link color2 " href="addBlog" >Create New Post</a>
+    </li>
+    <li class= "nav-item" *ngIf="loginservice.isUserLoggedIn()">
+      <a class="nav-link color2 " href="myAccount" >My Profile</a>
+    </li>
+
+  </ul>
+  <ul style="margin-left: auto;margin-top: 15px;">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2 font2" type="text" placeholder="Search">
+      <button class="btn font2" type="submit" style="background: #97B162;">Search</button>
+    </form>
+  </ul>
+</nav>
+

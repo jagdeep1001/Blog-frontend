@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<div style="background: url('../../assets/images.jpg'); text-align: center; height:60px;">
+
+  <span class="list1">Register for Free with our Website !</span>
+</div>
+<div style="margin-left: 400px;margin-top:50px;">
+<div style="text-align: center;" >
+
+  <form class="form justify-content-center was-validated" >
+    <div class="d-flex">
+  <div class="card font2" style="width:400px;">
+    <div class="card-body">
+<div class="form-group">
+    <label for="email" class="color1">Enter Email Adrress :</label>
+    <input class="form-control" type="email" id="email" placeholder="Enter Email Adrress" name="email" [(ngModel)]="user.email" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div><br>
+    </div>
+      <div class="form-group">
+    <label for="Name" class="color1">Enter your Name :</label>
+    <input class="form-control" type="text" id="Name" placeholder="Enter Your Name" name="name" [(ngModel)]="user.username" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div><br>
+      </div>
+      <div class="form-group">
+    <label for="pwd" class="color1">Enter Password :</label>
+    <input type="password" id="pwd" name="password" [(ngModel)]="user.password" class="form-control" placeholder="Enter Password" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div><br>
+    </div>
+  </div>
+  </div>
+    <div class="card font2" style="width:400px;">
+      <div class="card-body">
+        <div class="form-group">
+        <label for="mobileNo" class="color1">Enter Your Mobile Number :</label>
+        <input class="form-control" type="number" id="mobileNo" placeholder="Enter Contact Number" name="mobileno" [(ngModel)]="user.mobile"  required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div><br>
+        </div>
+      <div class="form-group">
+        <label class="color1">Gender :</label>
+      <select [(ngModel)]="user.gender" class="form-control custom-select" name="gender" required>
+        <option >Male</option>
+        <option >Female</option>
+        <option >Transgender</option>
+      </select>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div><br><br><br>
+      </div>
+      <button class="btn btn-block btn-outline-info" (click)="createUser()">Sign Up !</button>
+      </div>
+    </div>
+    </div>
+  </form>
+
+
+</div>
+</div>
